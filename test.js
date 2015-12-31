@@ -1,13 +1,11 @@
-'use strict';
-var test = require('ava');
-var codePointAt = require('code-point-at');
-var fn = require('./');
+import test from 'ava';
+import codePointAt from 'code-point-at';
+import m from './';
 
-test(function (t) {
-	t.assert(fn(codePointAt('あ')));
-	t.assert(fn(codePointAt('谢')));
-	t.assert(fn(codePointAt('고')));
-	t.assert(fn(0x1f251));
-	t.assert(!fn(codePointAt('a')));
-	t.end();
+test(t => {
+	t.true(m(codePointAt('あ')));
+	t.true(m(codePointAt('谢')));
+	t.true(m(codePointAt('고')));
+	t.true(m(0x1f251));
+	t.false(m(codePointAt('a')));
 });

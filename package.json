@@ -13,7 +13,7 @@
     "node": ">=0.10.0"
   },
   "scripts": {
-    "test": "node test.js"
+    "test": "ava"
   },
   "files": [
     "index.js"
@@ -39,7 +39,7 @@
     "number-is-nan": "^1.0.0"
   },
   "devDependencies": {
-    "ava": "0.0.4",
+    "ava": "*",
     "code-point-at": "^1.0.0"
   }
 }
