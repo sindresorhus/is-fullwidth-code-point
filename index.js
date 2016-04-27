@@ -6,8 +6,6 @@ module.exports = function (x) {
 		return false;
 	}
 
-	// https://github.com/nodejs/io.js/blob/cff7300a578be1b10001f2d967aaedc88aee6402/lib/readline.js#L1369
-
 	// code points are derived from:
 	// http://www.unix.org/Public/UNIDATA/EastAsianWidth.txt
 	if (x >= 0x1100 && (
