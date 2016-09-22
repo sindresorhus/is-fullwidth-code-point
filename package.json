@@ -10,10 +10,10 @@
     "url": "sindresorhus.com"
   },
   "engines": {
-    "node": ">=0.10.0"
+    "node": ">=4"
   },
   "scripts": {
-    "test": "ava"
+    "test": "xo && ava"
   },
   "files": [
     "index.js"
@@ -35,11 +35,11 @@
     "detect",
     "check"
   ],
-  "dependencies": {
-    "number-is-nan": "^1.0.0"
-  },
   "devDependencies": {
     "ava": "*",
-    "code-point-at": "^1.0.0"
+    "xo": "*"
+  },
+  "xo": {
+    "esnext": true
   }
 }
