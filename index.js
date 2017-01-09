@@ -1,9 +1,7 @@
 'use strict';
 /* eslint-disable yoda */
-module.exports = x =>
-{
-	if (Number.isNaN(x))
-	{
+module.exports = x => {
+	if (Number.isNaN(x)) {
 		return false;
 	}
 
@@ -46,8 +44,7 @@ module.exports = x =>
 			// CJK Unified Ideographs Extension B .. Tertiary Ideographic Plane
 			(0x20000 <= x && x <= 0x3fffd)
 		)
-	)
-	{
+	) {
 		return true;
 	}
 
