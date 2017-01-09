@@ -12,6 +12,12 @@ module.exports = x => {
 			x <= 0x115f ||  // Hangul Jamo
 			x === 0x2329 || // LEFT-POINTING ANGLE BRACKET
 			x === 0x232a || // RIGHT-POINTING ANGLE BRACKET
+
+			// https://en.wikipedia.org/wiki/Box-drawing_character
+			(0x2500 <= x && x <= 0x257f) ||
+			// https://en.wikipedia.org/wiki/Block_Elements
+			(0x2580 <= x && x <= 0x259f) ||
+
 			// CJK Radicals Supplement .. Enclosed CJK Letters and Months
 			(0x2e80 <= x && x <= 0x3247 && x !== 0x303f) ||
 			// Enclosed CJK Letters and Months .. CJK Unified Ideographs Extension A
