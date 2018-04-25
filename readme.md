@@ -6,7 +6,7 @@
 ## Install
 
 ```
-$ npm install --save is-fullwidth-code-point
+$ npm install is-fullwidth-code-point
 ```
 
 

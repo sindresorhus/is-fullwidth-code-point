@@ -1,5 +1,6 @@
-'use strict';
 /* eslint-disable yoda */
+'use strict';
+
 module.exports = x => {
 	if (Number.isNaN(x)) {
 		return false;
@@ -9,7 +10,7 @@ module.exports = x => {
 	// http://www.unix.org/Public/UNIDATA/EastAsianWidth.txt
 	if (
 		x >= 0x1100 && (
-			x <= 0x115F ||  // Hangul Jamo
+			x <= 0x115F || // Hangul Jamo
 			x === 0x2329 || // LEFT-POINTING ANGLE BRACKET
 			x === 0x232A || // RIGHT-POINTING ANGLE BRACKET
 			// CJK Radicals Supplement .. Enclosed CJK Letters and Months

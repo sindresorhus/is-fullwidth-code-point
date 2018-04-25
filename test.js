@@ -1,7 +1,7 @@
 import test from 'ava';
-import m from './';
+import m from '.';
 
-test(t => {
+test('main', t => {
 	t.true(m('あ'.codePointAt(0)));
 	t.true(m('谢'.codePointAt(0)));
 	t.true(m('고'.codePointAt(0)));
