@@ -2,7 +2,7 @@
 'use strict';
 
 module.exports = x => {
-	if (Number.isNaN(x)) {
+	if (Number.isNaN ? Number.isNaN(x) : x !== x) {
 		return false;
 	}
 

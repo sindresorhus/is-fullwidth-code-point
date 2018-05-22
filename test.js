@@ -9,3 +9,12 @@ test('main', t => {
 	t.false(m('a'.codePointAt(0)));
 	t.true(m(0x1F251));
 });
+
+test('IE 11', t => {
+	Object.defineProperty(Number, 'isNaN', {
+		writable: true,
+		value: undefined
+	});
+
+	t.true(m(NaN));
+});
