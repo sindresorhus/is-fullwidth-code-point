@@ -1,7 +1,7 @@
 /* eslint-disable yoda */
 'use strict';
 
-module.exports = x => {
+const isFullwidthCodePoint = x => {
 	if (Number.isNaN(x)) {
 		return false;
 	}
@@ -45,3 +45,6 @@ module.exports = x => {
 
 	return false;
 };
+
+module.exports = isFullwidthCodePoint;
+module.exports.default = isFullwidthCodePoint;
