@@ -2,9 +2,13 @@
 'use strict';
 
 const isFullwidthCodePoint = codePoint => {
+	if (!Number.isInteger(codePoint)) {
+		return false;
+	}
+
 	// Code points are derived from:
 	// https://unicode.org/Public/UNIDATA/EastAsianWidth.txt
-	return Number.isInteger(codePoint) && codePoint >= 0x1100 && (
+	return codePoint >= 0x1100 && (
 		codePoint <= 0x115F || // Hangul Jamo
 		codePoint === 0x2329 || // LEFT-POINTING ANGLE BRACKET
 		codePoint === 0x232A || // RIGHT-POINTING ANGLE BRACKET
