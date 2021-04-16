@@ -1,7 +1,6 @@
 /* eslint-disable yoda */
-'use strict';
 
-const isFullwidthCodePoint = codePoint => {
+export default function isFullwidthCodePoint(codePoint) {
 	if (!Number.isInteger(codePoint)) {
 		return false;
 	}
@@ -38,7 +37,4 @@ const isFullwidthCodePoint = codePoint => {
 		// CJK Unified Ideographs Extension B .. Tertiary Ideographic Plane
 		(0x20000 <= codePoint && codePoint <= 0x3FFFD)
 	);
-};
-
-module.exports = isFullwidthCodePoint;
-module.exports.default = isFullwidthCodePoint;
+}

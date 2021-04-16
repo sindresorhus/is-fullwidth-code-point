@@ -1,4 +1,4 @@
-import {expectType} from 'tsd-check';
-import isFullwidthCodePoint from '.';
+import {expectType} from 'tsd';
+import isFullwidthCodePoint from './index.js';
 
 expectType<boolean>(isFullwidthCodePoint('谢'.codePointAt(0)!));
