@@ -8,4 +8,6 @@ test('main', t => {
 	t.false(isFullwidthCodePoint(Number.NaN));
 	t.false(isFullwidthCodePoint('a'.codePointAt(0)));
 	t.true(isFullwidthCodePoint(0x1_F2_51));
+	t.true(isFullwidthCodePoint(0x1_B1_1E));
+	t.false(isFullwidthCodePoint(0x20_1D));
 });
