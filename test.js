@@ -7,5 +7,5 @@ test('main', t => {
 	t.true(isFullwidthCodePoint('고'.codePointAt(0)));
 	t.false(isFullwidthCodePoint(Number.NaN));
 	t.false(isFullwidthCodePoint('a'.codePointAt(0)));
-	t.true(isFullwidthCodePoint(0x1F251));
+	t.true(isFullwidthCodePoint(0x1_F2_51));
 });
