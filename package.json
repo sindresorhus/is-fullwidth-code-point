@@ -1,6 +1,6 @@
 {
 	"name": "is-fullwidth-code-point",
-	"version": "4.0.0",
+	"version": "5.0.0",
 	"description": "Check if the character represented by a given Unicode code point is fullwidth",
 	"license": "MIT",
 	"repository": "sindresorhus/is-fullwidth-code-point",
