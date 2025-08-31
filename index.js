@@ -1,9 +1,12 @@
-import {eastAsianWidth} from 'get-east-asian-width';
+import {
+	_isFullWidth as isFullWidth,
+	_isWide as isWide,
+} from 'get-east-asian-width';
 
 export default function isFullwidthCodePoint(codePoint) {
 	if (!Number.isInteger(codePoint)) {
 		return false;
 	}
 
-	return eastAsianWidth(codePoint) === 2;
+	return isFullWidth(codePoint) || isWide(codePoint);
 }
